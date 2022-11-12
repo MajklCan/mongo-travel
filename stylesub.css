@@ -1,0 +1,219 @@
+.sub-content{
+	width: 100%;
+	background-size: cover;
+	margin-top: 2vh;
+	overflow: hidden;
+}
+
+.obyvatel{
+	background-image: url(img/Prlx2.jpg);
+}
+.gastro{
+	background-image: url(img/gastro.jpg);
+}
+.place1{
+	background-image: url(img/place1.jpg)
+}
+.place2{
+	background-image: url(img/place2.jpg);
+}
+.place3{
+	background-image: url(img/place3.jpg)
+}
+
+
+.gal-people{
+	background-image: url(img/people.jpg);
+}
+.gal-gastro{
+	background-image: url(img/food1.jpeg);
+}
+.gal-place1{
+	background-image: url(img/place1sub.jpg)
+}
+.gal-place2{
+	background-image: url(img/place2sub.jpg)
+}
+.gal-place3{
+	background-image: url(img/Ongii.jpg)
+}
+
+.text{
+	width: 750px;
+	min-height: 98vh;
+	background-color: rgba(0,0,0,0.7);
+	position: relative;
+	display: block;
+	color: white;
+}
+.text > h2{
+	width: 100%;
+	border: none;
+	margin-left: 15%;
+	padding-top: 15%;
+	font-size: 3.5em
+}
+.text > p{
+	font-family: lato;
+	font-weight: 300;
+	width: 60%;
+	margin-left: 15%;
+	line-height: 22px;
+	border-left: 4px solid coral;
+	padding: 0 12px
+}
+.text > .gal-image{
+	margin-left: 15%;
+	margin-top: 5%;
+	width: 60%;
+	overflow: hidden;
+}
+.text > .gal-image:hover .gal-overlay{
+	width: 100%;
+	height: 110%;
+}
+.text > .gal-image:hover .gal-image-picture{
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-filter: blur(1px);
+	        filter: blur(1px)
+}
+.sub-aktiv-content{
+	margin-top: 2vh;
+	min-height: 90vh;
+	width: 100%;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+	-ms-flex-align: center;
+	    -webkit-box-align: center;
+	    align-items: center;
+}
+.part-info{
+	margin-top: 8%;
+	font-family: raleway;
+	font-size: 2em;
+	width: 80%;
+	text-align: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	height: 60vh;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+}
+.part-info h1{
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	width: 100%;
+}
+.part-info h3{
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	width: 100%;
+	color: #666;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 1em;
+	padding-bottom: 5%
+}
+.info-content img{
+	width: auto;
+	height: 50vh;
+	border-radius: 2px;
+	position: relative;
+}
+.info-content{
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	padding: 1% 15%;
+}
+.info-content ul{
+	width: 100%;
+	height: 50vh;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around
+}
+.info-content a{
+	width: 60%;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+	padding: 20px 20px;
+	color: white;
+	background-color: coral;
+	border-radius: 2px;
+	font-family: Roboto;
+	font-weight: 500;
+	box-shadow: 0px 1px 5px 0 black;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.info-content a:hover{
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+/* Galery */
+.gallery{
+	width: 90%;
+}
+.gallery-preview{
+	padding-top: 5%
+}
+
+
+@media screen and ( max-width:768px ){ /*------Mobile------*/
+	.text{
+		width: 100%;
+		min-width: 100vw
+	}
+	.sub-content > .text >H2{
+		width: 0%;
+	}
+	.text > p{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.text > .gal-image{
+		z-index: 1;
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
+		margin-left: ;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		width: 60%;
+	}
+}
+@media screen and ( min-width:768px ){
+	.text{
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+	-webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+		}
+}
+@media screen and ( max-width:400px ){
+	.text > .gal-image{
+		margin-left: -5%
+	}
+}
