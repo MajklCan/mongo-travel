@@ -459,8 +459,6 @@ nav{
 	background-position-x: 50%;
 	background-position-y: 50%;
 	background-size: cover;
-	background-repeat-x: no-repeat;
-	background-repeat-y: no-repeat;
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -1475,9 +1473,6 @@ body::-webkit-scrollbar-track {
 	}
 	.navbar > li{
 		font-size: 3vh
-	}
-	.nav-header > span{
-		font-size: em
 	}
 	.gal-image{
 		width: 50%;
