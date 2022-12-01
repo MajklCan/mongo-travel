@@ -1522,3 +1522,24 @@ body::-webkit-scrollbar-track {
 
 
 
+@media print {
+	.navbar{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+	.gallery-preview{
+		display: none;
+	}
+	.image-box{
+		display: none !important;
+	}
+	.image{
+		display: none !important;
+	}
+	.banner{
+		height: 15vw;
+	}
+ }
+
